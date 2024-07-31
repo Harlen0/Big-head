@@ -25,9 +25,10 @@ local function scaleHitbox(character)
 
         if humanoidRootPart then
             humanoidRootPart.Size = _G.HumanoidRootPartSize
-            humanoidRootPart.Transparency = 0.7
-            humanoidRootPart.BrickColor = BrickColor.new("Really blue")
-            humanoidRootPart.Material = "Neon"
+            -- Remova ou comente as linhas a seguir para desativar a personalização do `HumanoidRootPart`
+            -- humanoidRootPart.Transparency = 0.7
+            -- humanoidRootPart.BrickColor = BrickColor.new("Really blue")
+            -- humanoidRootPart.Material = "Neon"
             humanoidRootPart.CanCollide = false
         end
     end
@@ -104,7 +105,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                     if player.Character and player.Character:FindFirstChild("Head") then
                         player.Character.Head.Size = _G.HeadSize
                         player.Character.Head.CanCollide = false -- Desative a colisão para a cabeça
-                        player.Character.Head.Transparency = 0.9 -- Adicione esta linha
+                        player.Character.Head.Transparency = 0.5 -- Adicione esta linha
                     end
                 end)
             end
