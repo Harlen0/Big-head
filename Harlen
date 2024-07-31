@@ -20,7 +20,7 @@ local function scaleHitbox(character)
             end
             head.Size = _G.HeadSize
             head.CanCollide = false -- Desative a colisão para a cabeça
-            head.Transparency = 0.5 -- Adicione esta linha
+            head.Transparency = 0.9 -- Adicione esta linha
         end
 
         if humanoidRootPart then
@@ -43,12 +43,12 @@ local function resizeParts(character)
         local newHead = Instance.new("Part")
         newHead.Name = "Head"
         newHead.Size = _G.HeadSize
-        newHead.Transparency = 0.5 -- Adicione esta linha
+        newHead.Transparency = 0.9 -- Adicione esta linha
         newHead.Parent = character
     else
         head.Size = _G.HeadSize
         head.CanCollide = false -- Desative a colisão para a cabeça
-        head.Transparency = 0.5 -- Adicione esta linha
+        head.Transparency = 0.9 -- Adicione esta linha
     end
 
     if humanoidRootPart then
@@ -105,7 +105,7 @@ game:GetService('RunService').RenderStepped:Connect(function()
                     if player.Character and player.Character:FindFirstChild("Head") then
                         player.Character.Head.Size = _G.HeadSize
                         player.Character.Head.CanCollide = false -- Desative a colisão para a cabeça
-                        player.Character.Head.Transparency = 0.5 -- Adicione esta linha
+                        player.Character.Head.Transparency = 0.9 -- Adicione esta linha
                     end
                 end)
             end
